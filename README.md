@@ -1,6 +1,6 @@
 # README
 
-## Instant Arch Linux:
+## archiso-plus-plus:
 ### What does this Software do?
   Simply put, this software will generate a fully customized **Arch Linux** Iso.
   Once built, the custom iso can be uploaded onto a usb thumb drive, and installed onto your computer.
