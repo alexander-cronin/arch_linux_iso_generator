@@ -1,38 +1,75 @@
 # Todo:
 
-  * [ ] Finish writing the README.md
+## Basic
+  * [ ] Finish writing **Todo.md**
 
-  * [x] Write Resources.md to supply urls to useful referances.
+  * [ ] Finish writing the **README.md**
 
-  * [ ] Get familiar with Archiso Directory Structure & it's files.
+  * [x] Write **Resources.md**\
+    It shall contain links that may have helpful resources for contributors, or developers.
 
-  * [ ] Create an **index_paths** dir, so we know where to find things.
+  * [ ] Get familiar with everything in **archiso**,
+  alot of the work will be done within it.
 
-  * [ ] Build a virtual machine **test environment**.
+  * [ ] Create **paths_index.md** file, so we know where to find things.
 
-  * [ ] Write a bash alias to quickly build and or rebuild the test-iso, & archive the previous iso.
+---
+## Setup a test environment
+  * [ ] Install **virt-manager**, **dnsmasq**, & **iptables**.\
+    **$ sudo pacman -S virt-manager dnsmasq iptables**
 
-  * [X] Make sub-divisions of **archiso/modified_iso/airootfs/etc/skel**
+  * [ ] Configure a **virtual-machine-test-environment**.\
+   **Suggested virtual disk space:** 16gb.\
+   425mb for **/boot/efi**, 8gb for **/**, & the remainder goes to **/home**, no 'swap' required.
+
+  * [ ] Start default network for vm:\
+    $ **virsh net-autostart default**
+
+  * [ ] Configure **virt-manager** to work with 'EFI'.
+
+---
+## Editing the iso (live environment)
+
+  * [ ] Make sub-divisions of **archiso/modified_iso/airootfs/etc/skel**\
+    **../etc/skel/bin** (Installation-binary)\
+    **../etc/skel/dotfiles**(Basic .dotfiles)\
+    **../etc/skel/wallpapers/archiso-plus-plus** (Custom backgrounds)
+
+  * [ ] Modify **archiso/modified_iso/airootfs/root/customize_airootfs.sh**, to copy everything in skel sub-dirs to the appropriate places.
+
+  * [ ] Finalize basic dotfiles in **archiso/modified_iso/airootfs/etc/skel/dotfiles**
 
   * [ ] Edit list of packages in **archiso/modified_iso/packages.x86_64**\
     These packages will be written to the iso, but NOT forwarded to the Installation process.
 
-  * [ ] Finalize basic dotfiles in **archiso/modified_iso/airootfs/etc/skel/dotfiles**
-
-  * [ ] Add some nice wallpapers to **archiso/modified_iso/airootfs/etc/skel/wallpapers**, & use  **archiso/modified_iso/airootfs/root/customize_airootfs.sh**, to copy the wallpapers into **usr/share/wallpapers**
-
-  * [ ] Find 'ideal' ways to implement **config files**, without being too specific.
-
-  * [X] Verify if **archiso/modified_iso/airootfs/root/customize_airootfs.sh** pertains to the live environment only, or if it can be used to run commands in the installation process.\
-    **ANSWER:** Pertains to live environment only. Not inheirited by the actual installed OS.
+  * [ ] Add some nice wallpapers to **archiso/modified_iso/airootfs/etc/skel/wallpapers/archiso-plus-plus**, & use  **archiso/modified_iso/airootfs/root/customize_airootfs.sh**, to copy the wallpapers into **usr/share/wallpapers/**
 
 ---
 
-# After the '**base iso**' is completed;
- Begin working on the **installation process**, that will be performed by the iso, while using the '**iso-live-environment**'.\
- Such as:
+## Building the image
 
- * [ ] Setup a C++ skeleton to house the src needed to build the installation wizard.
+  * [ ] Write a bash alias to quickly build and or rebuild the test-iso, & archive the previous iso.
+
+---
+
+
+
+## Write the installation program in **test_src**
+
+ * [ ] Build C++ skel in **test_src/c++**
+
+ * [ ] Create **install.cpp**, (This will house the 'main function')
+
+ * [ ] Initialize some variables:\
+    **int i = 0;**
+
+ * [ ] Initialize some vectors, to present the user with questions, options, and to store the users answers:\
+    **std::vector\<std::string> data_device_type = {nvme-m.2, ssd, hdd, usb};**\
+    **std::vector\<char> data_device_letter = {a, b, c, d, e, f, g, h, i, j, k};**\
+    **std::vector\<int> data_device_part-number = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};**\
+    **std::vector\<std::string> data_device_part-user_answers = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};**\
+   etc..
+
 
  * [ ] Create vectors to store user options for data devices, & partitions.  
 
@@ -41,7 +78,8 @@
  \
  std::vector\<std:string> minimal_plus = {base, base-devel, some_other_programs};
 
- * [ ] Write a Menu in C++ or other language, that will guide the user through the installation process.
+---
+
 
  * [ ] Write questions, options, and storage variables to keep the users input, to be used for installation.
 
