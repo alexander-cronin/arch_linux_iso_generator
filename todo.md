@@ -70,16 +70,12 @@
     **std::vector\<std::string> data_device_part-user_answers = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};**\
    etc..
 
-
  * [ ] Create vectors to store user options for data devices, & partitions.  
 
  * [ ] Create vectors to store bundles of pre-determined programs, selectable by the user, during installation.\
   **Example:** std::vector\<std:string> minimal = {base, base-devel};\
  \
  std::vector\<std:string> minimal_plus = {base, base-devel, some_other_programs};
-
----
-
 
  * [ ] Write questions, options, and storage variables to keep the users input, to be used for installation.
 
@@ -91,6 +87,10 @@
 
  * [ ] Use the '**pacstrap**' command to install a vector of packages, depending on user choice.
 
+ * [ ] There is surely more to add here...\
+  Perhaps when the time is right...
+
+ * [ ] Debug, debug, debug.....
  ---
 
 # When the C++ 'test-installation Wizard' is passing and debugged:
@@ -100,7 +100,20 @@
 
  * [ ] Use **archiso/modified_iso/airootfs/root/customize_airootfs.sh** to copy the binary from **archiso/modified_iso/airootfs/root** to **root/desktop**. So that the user may easily find the **install wizard**.
 
-
 ---
 
-# Next Step???
+# Rebuild the iso with the installer payload
+
+  * [ ] Spin up the iso on a the 'VM' that was created earlier
+
+  * [ ] Make sure all the packages have been successfully installed, and are working, without issue.
+
+  * [ ] Confirm that all dotfiles are where they should be.
+
+  * [ ] Confirm wallpapers are located within **/usr/share/wallpapers/archiso-plus-plus**
+
+  * [ ] When everything seems to look good, build an iso, and post it to github under a different project name.
+
+  * [ ] Write a nice **README.md** and a 'github pages' html page to show off my work.
+
+  ---
