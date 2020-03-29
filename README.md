@@ -34,104 +34,64 @@
 * **Minimal +** (Barbones, with a basic '~/.bashrc') <--Experts Only
 * **Basic** (Barebones + desktop environment) <--Useable by some humans, but missing many creature comforts
 * **Complete** (Basic Package + Many useful basic programs, and some configuration) <--What most users will want
-
+* **Devarch**
+(Complete package, plus some additional programs that deveolopers may find useful)
 ---
 ### Programs included with 'Minimal' install
-* base
-* base devel
-* grub
-* efibootmgr
+* **base** (Minimal package set to define a basic Arch Linux installation)
+* **base devel** (https://www.archlinux.org/groups/x86_64/base-devel/)
+* **grub** (bootloader)
+* **efibootmgr** (allows for use with EFI)
 ---
 ### Programs included with 'Minimal +' install
-* base
-* base devel
-* grub
-* efibootmgr
-* ~/.bashrc
-* ~/.bash_profile
-* vim
-* ~/.vimrc
-* reflector
+* **Minimal bundle**
+* **~/.bashrc** (Gives your terminal a fancier look)
+* **~/.bash_profile** (Various uses)
+* **vim** (terminal text editor)
+* **~/.vimrc** (specify settings for vim)
+* **reflector** (specify settings to search, rate, sort & save mirrors to your mirror list)
 ---
 ### Programs included with 'Basic' install
-* base
-* base devel
-* grub
-* efibootmgr
-* ~/.bashrc
-* ~/.bash_profile
-* vim
-* ~/.vimrc
-* reflector
-* plasma
-* sddm
+* **Minimal +** bundle
+* **xorg** (display server)
+* **plasma** (desktop environment)
+* **sddm** (display / login manager)
 ---
 ### Programs included with 'Complete' install
-* base
-* base devel
-* grub
-* efibootmgr
-* ~/.bashrc
-* ~/.bash_profile
-* vim
-* ~/.vimrc
-* reflector
-* xorg (display server)
-* plasma (desktop environment)
-* sddm (display manager)
-* libreoffice-fresh (newest version of libreoffice)
-* partitionmanager (Manage partitions with a gui)
-* cfdisk (terminal Based partitionmanager)
-* bluez (bluetooth manager)
-* kmail (email client)
-* networkmanager (self explanatory)
-*
-
-
+* **Basic** bundle
+* **dolphin** (file explorer)
+* **konsole** (terminal emulator)
+* **kcalc** (calculator)
+* **sddm** (display manager)
+* **libreoffice-fresh** (newest version of libreoffice)
+* **partitionmanager** (Manage partitions with a gui)
+* **cfdisk** (terminal Based partitionmanager)
+* **bluez** (bluetooth manager)
+* **kmail** (email client)
+* **networkmanager** (self explanatory)
+* **samba** (file sharing)
 ---
 
 ### Programs included with 'Devarch' install
-
-### Default Programs
-* plasma (desktop environment)
-* KDE Partition-Manager (GUI based partition manager)
-* cfdisk (terminal based partition manager)
-* vim (simple, yet powerful teminal based text editor)
-* apache (to host your web-page test server)
-* python3 (most recent python language interpreter)
-* bluez (bluetooth client)
-* kmail (email client)
-* atom (text-editor)
-* networkmanager (connect to networks)
-* openjdk (most recent java dev-kit)
-* openssh (opensource secure shell client)
-* konsole (terminal emulator)
-* kcalc (calculator)
+* All of the programs and packages of the other install bundles will be included.
+* **atom text editor** (hackable text editor)
+* **apache** (webserver)
+* **mysql** (server query software)
+* **phpmyadmin** (administration panel for php websites)
+* **vscode** (microsoft ide)
+* **python3** (python3 interpreter, allows you to run python code and apps)
+* **webmin** (website administration front-end)
+* **gcc** (gnu c/c++ lang compiler)
 ---
-
-
 ### Features
 * Desktop Environment
 * Partition-Manager
 * System recovery tool
 * Multiple choice menu-based installation.
 * Light-weight and fast Live Environment
-* No Malware, or Spyware
+* No malware, or spyware
 * Fast Installation, and set-up
 * User-friendly, even for first time Linux users
----
-
-### Screenshots
-
-![ScreenShot 1](/src/img/Screenshot_1.png)
----
----
-![ScreenShot 2](/src/img/Screenshot_2.png)
----
----
-
-### Powered by:![ScreenShot 3](/src/img/archlinux-logo-dark.svg)
----
 ---
 ### How to Contribute
 * Click 'Fork' button on github.
@@ -141,3 +101,11 @@
 * $ git clone https://github.com/your_git_username/instant_arch_linux.git
 * Create a branch to work on, (use a sensible name):
 * $ git checkout -b name_of_your_branch
+* Make  your changes
+* Please read and adhere to my **contributing.md**
+* I expect comments for every function, or any code that is not obvious to a monkey.
+* Commit your changes to your fork.
+* When you are done making your changes, and have debugged your work, make a **pull request** and leave a good summary of what your changes do.
+* Not all work submitted for review will be accepted.
+* But I do appreciate honest work.
+---
