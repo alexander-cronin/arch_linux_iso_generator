@@ -5,13 +5,12 @@
   Simply put, this software will generate a fully customized **Arch Linux** Iso.
   Once built, the custom iso can be uploaded onto a usb thumb drive, and installed onto your computer.
   The finished project will yield an iso that will provide a more **user friendly** installation process, allowing mere human beings access to **Arch Linux**.
-  This project is built on top of **'Archiso'**, which is the official tool used for generating **Arch Linux** isos.
-  By customizing what will be generated in the iso image, we can dramatically influence the behaviour of the iso, as well as control the outcome of the finished project, by carefully walking the user through a guided multiple-choice installation process.
+  This project is built on top of **'Archiso'**, which is the official tool used for generating **Arch Linux** iso's.\
+  By customizing the iso image, we can dramatically influence the behavior of the iso, as well as control the outcome of the finished project, by carefully walking the user through a guided multiple-choice installation process.\
   Traditionally, Arch Linux is Built from the ground-up, into a completely custom system.
   My goal is to generate installation isos, that will greatly reduce the time spent, and skill needed, in order to get Arch Linux working, & configured without problems.
 
 ---
-
 ### What makes it unique?
 * Guided **'Multiple Choice'** Installation Process
 * Live-Iso has **'desktop environment'** (Traditional iso does not)
@@ -25,17 +24,14 @@
 * Fast boot time
 * Fast computing
 * Runs great on most any pc **new** or **old**
+* Image can even be installed as a full OS on a usb flashdrive
 ---
-
-
 ### Installation Options
-
-* **Minimal** (Barebones Arch Linux) <--Experts only
-* **Minimal +** (Barbones, with a basic '~/.bashrc') <--Experts Only
-* **Basic** (Barebones + desktop environment) <--Useable by some humans, but missing many creature comforts
-* **Complete** (Basic Package + Many useful basic programs, and some configuration) <--What most users will want
-* **Devarch**
-(Complete package, plus some additional programs that deveolopers may find useful)
+* **Minimal:** (Barebones Arch Linux) **<--Experts only**
+* **Minimal_Plus:** (Barebones, with a basic '~/.bashrc') **<--Experts Only**
+* **Basic:** (Barebones + desktop environment) **<--Useable by some humans, but missing many creature comforts**
+* **Complete:** (Basic Package + Many useful basic programs, and some configuration) **<--What most users will want**
+* **Devarch:** (Complete package, plus some additional programs that developers may find useful) **<--This bundle is tailored towards developers, and aspiring developers**
 ---
 ### Programs included with 'Minimal' install
 * **base** (Minimal package set to define a basic Arch Linux installation)
@@ -52,7 +48,7 @@
 * **reflector** (specify settings to search, rate, sort & save mirrors to your mirror list)
 ---
 ### Programs included with 'Basic' install
-* **Minimal +** bundle
+* **Minimal_Plus** bundle
 * **xorg** (display server)
 * **plasma** (desktop environment)
 * **sddm** (display / login manager)
@@ -63,15 +59,14 @@
 * **konsole** (terminal emulator)
 * **kcalc** (calculator)
 * **sddm** (display manager)
-* **libreoffice-fresh** (newest version of libreoffice)
+* **libreoffice-fresh** (office suite)
 * **partitionmanager** (Manage partitions with a gui)
-* **cfdisk** (terminal Based partitionmanager)
-* **bluez** (bluetooth manager)
+* **cfdisk** (terminal Based partition manager)
+* **bluez** (blue-tooth manager)
 * **kmail** (email client)
 * **networkmanager** (self explanatory)
 * **samba** (file sharing)
 ---
-
 ### Programs included with 'Devarch' install
 * All of the programs and packages of the other install bundles will be included.
 * **atom text editor** (hackable text editor)
@@ -79,9 +74,10 @@
 * **mysql** (server query software)
 * **phpmyadmin** (administration panel for php websites)
 * **vscode** (microsoft ide)
-* **python3** (python3 interpreter, allows you to run python code and apps)
+* **python3** (python3 interpreter, allows you to run python code, and apps)
 * **webmin** (website administration front-end)
 * **gcc** (gnu c/c++ lang compiler)
+* **more to come...**
 ---
 ### Features
 * Desktop Environment
@@ -108,4 +104,5 @@
 * When you are done making your changes, and have debugged your work, make a **pull request** and leave a good summary of what your changes do.
 * Not all work submitted for review will be accepted.
 * But I do appreciate honest work.
+* **Also note: This is my first major github project, please be patient! :)**
 ---
