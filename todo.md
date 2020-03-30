@@ -11,7 +11,7 @@
   * [ ] Get familiar with everything in **archiso**,
   alot of the work will be done within it.
 
-  * [ ] Create **paths_index.md** file, so we know where to find things.
+  * [X] Create **paths_index.md** file, so we know where to find things.
 
 ---
 ## Setup a test environment
