@@ -3,7 +3,7 @@
 ## Basic
   * [X] Finish writing **Todo.md**
 
-  * [ ] Finish writing the **README.md**
+  * [X] Finish writing the **README.md**
 
   * [x] Write **Resources.md**\
     It shall contain links that may have helpful resources for contributors, or developers.
@@ -12,6 +12,7 @@
    Alot of the work will be done within it.
 
   * [X] Create **paths_index.md** file, so we know where to find things.
+  * [X] All steps in 'Basic' section are completed.
 ---
 ## Setup a test environment
   * [ ] Install **virt-manager**, **dnsmasq**, & **iptables**.\
