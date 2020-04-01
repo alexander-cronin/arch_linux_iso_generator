@@ -1,10 +1,18 @@
 # Resources for developers:
 ---
 
-##  Useful information about Archiso.
-This project is built on top on Archiso, so familiarity with it, is a must.
+### Archiso.
 * https://wiki.archlinux.org/index.php/Archiso
-
 ---
-More urls probably coming in the future.\
-Stay tuned.
+
+### KDE wiki
+* https://wiki.archlinux.org/index.php/KDE
+---
+
+### Xorg
+* https://wiki.archlinux.org/index.php/Xorg
+---
+
+### Arch Linux Installation wiki
+* https://wiki.archlinux.org/index.php/installation_guide
+---
