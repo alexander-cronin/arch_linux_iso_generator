@@ -16,10 +16,10 @@
   * [X] All steps in 'Basic' section are completed.
 ---
 
-### Setup a test environment:
+### Setup a virtual test environment:
   * [X] Install **virt-manager**, & **dependencies**.
   ```
-    $ sudo pacman -S qemu virt-manager dnsmasq iptables ebtables bridge-utils
+    $ sudo pacman -S qemu iptables dnsmasq  ebtables bridge-utils virt-manager ovmf
   ```
 
   * [X] **Start required services**
@@ -94,7 +94,7 @@
   * [ ] Add some nice wallpapers to **archiso/modified_iso/airootfs/etc/skel/wallpapers/archiso-plus-plus**, & use  **archiso/modified_iso/airootfs/root/customize_airootfs.sh**, to copy the wallpapers into **usr/share/wallpapers/**
 ---
 
-### Building the image
+### Build the image
 
   * [ ] Write a bash alias to quickly build and or rebuild the test-iso, & archive the previous iso.
 ---
