@@ -1,1 +1,4 @@
-test_src
+test_src/bash/*
+test_src/C++/*
+test_src/dotfiles/*
+test_src/python/*
