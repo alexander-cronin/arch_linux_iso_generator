@@ -16,3 +16,11 @@
 ### Arch Linux Installation wiki
 * https://wiki.archlinux.org/index.php/installation_guide
 ---
+
+### arch linux general reccomendations (really good info)
+* https://wiki.archlinux.org/index.php/general_recommendations
+---
+
+## bash commands
+* https://ss64.com/bash/
+---
